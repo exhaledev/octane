@@ -1,8 +1,8 @@
 .idea
 .vercel
 
-keys
-
+pwd/keys
+notes.txt
 .env
 .env.*
 !.env.example
