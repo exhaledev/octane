@@ -13,7 +13,7 @@
     },
     "scripts": {
         "clean": "shx rm -rf build/*",
-        "build": "yarn clean && esbuild --bundle --platform=node --target=node14 --outdir=build --sourcemap --legal-comments=none `find src/api \\\\( -name '*.ts' \\\\)`",
+        "build": "yarn clean && esbuild src/api/index.ts --bundle --platform=node --target=node14 --outdir=build --sourcemap --legal-comments=none ",
         "vercel-build": "yarn run build --minify",
         "local": "vercel dev",
         "test": "mocha",
